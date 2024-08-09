@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+	<title>Personal Portofolio</title>
+</head>
+<body class="bg-neutral-950">
+
+    <nav id="navbar-section" class="flex justify-between items-center p-4 bg-gray-800 drop-shadow-lg">
+        <div class="text-xl font-semibold">
+            <a href="#" class="text-gray-100">Furqan Al Ghifari Zulva</a>
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-100 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Menu Links -->
+        <ul id="menu" class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 absolute md:relative top-16 left-0 md:top-auto md:left-auto bg-gray-800 md:bg-transparent w-full md:w-auto p-4 md:p-0 shadow-md md:shadow-none transition-all duration-500 ease-in-out transform md:transform-none translate-y-[-100%]">
+            <li><a href="#about-section" class="block text-gray-100 hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-colors duration-200">About</a></li>
+            <li><a href="#experiences-section" class="block text-gray-100 hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-colors duration-200">Experiences</a></li>
+            <li><a href="#accomplishments-section" class="block text-gray-100 hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-colors duration-200">Accomplishments</a></li>
+            <li><a href="#projects-section" class="block text-gray-100 hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-colors duration-200">Projects</a></li>
+            <li><a href="#contact-section" class="block text-gray-100 hover:bg-gray-700 hover:text-white px-4 py-2 rounded transition-colors duration-200">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about-section" class="container mx-auto p-6 bg-gray-800">
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2">
+                <div id="profile" class="flex flex-col items-center">
+                    <img class="rounded-full mx-auto lg:mx-0" width="270" height="270" src="img/photo.png" alt="Your Name">
+                    <h2 class="text-2xl font-bold mt-2 text-gray-100">Furqan Al Ghifari Zulva</h2>
+                    <h3 class="text-xl mt-2 text-gray-100">Informatics Student</h3>
+                    <h3 class="text-lg text-gray-100"><a href="https://usk.ac.id/" target="_blank" rel="noopener">Universitas Syiah Kuala</a></h3>
+                    <ul class="flex justify-center lg:justify-start space-x-4 mt-4">
+                        <li><a href="https://www.linkedin.com/in/furqan-al-ghifari-zulva/" target="_blank" rel="noopener" aria-label="linkedin">
+                            <i class="fab fa-linkedin big-icon text-4xl"></i></a></li>
+                        <li><a href="https://github.com/furqanx" target="_blank" rel="noopener" aria-label="github">
+                            <i class="fab fa-github big-icon text-4xl"></i></a></li>
+                        <li><a href="https://www.kaggle.com/furqanalghifari" target="_blank" rel="noopener" aria-label="kaggle">
+                            <i class="fab fa-kaggle big-icon text-4xl"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0 lg:pl-8">
+                <div id="biography" class="flex flex-col items-center m-4">
+                    <h1 class="text-3xl font-semibold self-start text-gray-100">Biography</h1>
+                    <p class="mt-4 self-start text-gray-100">Furqan Al Ghifari Zulva is an undergraduate student at Universitas Syiah Kuala. 
+                        <br>He has a keen interest in Data and AI/ML.</p>
+                    <div class="mt-4 w-full flex justify-start space-x-8">
+                        <div class="mb-4">
+                            <h2 class="text-2xl font-semibold text-gray-100">Interests</h2>
+                            <ul class="list-disc pl-5">
+                                <li class="text-gray-100">Data Mining</li>
+                                <li class="text-gray-100">Machine Learning</li>
+                                <li class="text-gray-100">Computer Vision</li>
+                                <li class="text-gray-100">Digital Image Processing</li>
+                                <li class="text-gray-100">Text and Web Mining</li>
+                                <li class="text-gray-100">Natural Language Processing</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h2 class="text-2xl font-semibold text-gray-100">Education</h2>
+                            <ul class="list-none pl-0">
+                                <li class="flex items-center">
+                                    <i class="fas fa-graduation-cap text-3xl text-white mr-2"></i>
+                                    <div>
+                                        <p class="font-bold text-gray-100">Bachelor Degree, 2021</p>
+                                        <p class="text-sm text-gray-100">Universitas Syiah Kuala</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-center mt-4">
+                                    <i class="fas fa-graduation-cap text-3xl text-white mr-2"></i>
+                                    <div>
+                                        <p class="font-bold text-gray-100">High School, 2017</p>
+                                        <p class="text-sm text-gray-100">SMAN 10 Fajar Harapan</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences-section" class="container mx-auto p-6 bg-slate-900">
+        <div class="flex flex-col md:flex-row justify-between">
+            <!-- Bagian Heading -->
+            <div class="w-full flex justify-center items-center md:w-1/3 md:justify-center md:items-center md:mb-0">
+                <h1 class="text-3xl font-semibold text-gray-100">Experiences</h1>
+            </div>
+            <!-- Bagian Timeline -->
+            <div class="w-full md:w-2/3 flex flex-col md:grid mx-auto p-2 text-blue-50">
+                <!-- pengalaman pertama -->
+                <div class="flex flex-row md:contents">
+                    <div class="col-start-5 col-end-4 md:mx-auto relative mr-10">
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-1 bg-blue-800 h-1/2 pointer-events-none"></div>
+                        <div class="w-8 h-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 shadow-lg border-4 border-blue-400"></div>
+                    </div>                                     
+                    <div class="col-start-7 col-end-10 p-4 my-4 mr-auto shadow-md bg-gray-800 rounded-lg w-full">
+                        <h3 class="font-semibold text-xl mb-2 text-gray-100">Cohort</h3>
+                        <p class="leading-tight text-justify text-gray-300">Machine Learning Cohort</p>
+                        <p class="text-sm text-gray-400">Mar 2024 - July 2024 · Bangkit Academy</p>
+                        <p class="mt-2 text-sm">Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</p>
+                    </div>
+                </div>
+                <!-- pengalaman kedua -->
+                <div class="flex flex-row md:contents">
+                    <div class="col-start-5 col-end-4 md:mx-auto relative mr-10">
+                        <div class="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-800 pointer-events-none"></div>
+                        <div class="w-8 h-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 shadow-lg border-4 border-blue-400"></div>
+                    </div>
+                    <div class="col-start-7 col-end-10 p-4 my-4 mr-auto shadow-md bg-gray-800 rounded-lg w-full">
+                        <h3 class="font-semibold text-xl mb-2 text-gray-100">Assistant</h3>
+                        <p class="leading-tight text-justify text-gray-300">Data Structure and Algorithm Lab Assistant at the Informatics Department</p>
+                        <p class="text-sm text-gray-400">Feb 2024 - May 2024 · Universitas Syiah Kuala</p>
+                        <p class="mt-2 text-sm">Banda Aceh, Aceh, Indonesia</p>
+                    </div>
+                </div>
+                <!-- pengalaman ketiga -->
+                <div class="flex flex-row md:contents">
+                    <div class="col-start-5 col-end-4 md:mx-auto relative mr-10">
+                        <div class="absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-800 pointer-events-none"></div>
+                        <div class="w-8 h-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 shadow-lg border-4 border-blue-400"></div>
+                    </div>
+                    <div class="col-start-7 col-end-10 p-4 my-4 mr-auto shadow-md bg-gray-800 rounded-lg w-full">
+                        <h3 class="font-semibold text-xl mb-2 text-gray-100">Assistant</h3>
+                        <p class="leading-tight text-justify text-gray-300">Programming Lab Assistant at the Informatics Department</p>
+                        <p class="text-sm text-gray-400">Feb 2023 - Apr 2023 · Universitas Syiah Kuala</p>
+                        <p class="mt-2 text-sm">Banda Aceh, Aceh, Indonesia</p>
+                    </div>
+                </div>
+                <!-- pengalaman keempat -->
+                <div class="flex flex-row md:contents">
+                    <div class="col-start-5 col-end-4 md:mx-auto relative mr-10">
+                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-800 h-1/2 pointer-events-none"></div>
+                        <div class="w-8 h-8 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600 shadow-lg border-4 border-blue-400"></div>
+                    </div>
+                    <div class="col-start-7 col-end-10 p-4 my-4 mr-auto shadow-md bg-gray-800 rounded-lg w-full">
+                        <h3 class="font-semibold text-xl mb-2 text-gray-100">Assistant</h3>
+                        <p class="leading-tight text-justify text-gray-300">Computer Network Lab Assistant at the Mathematics Department</p>
+                        <p class="text-sm text-gray-400">Sep 2022 - Nov 2022 · Universitas Syiah Kuala</p>
+                        <p class="mt-2 text-sm">Banda Aceh, Aceh, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accomplishments-section" class="container mx-auto p-6 bg-slate-700">
+        <div class="flex flex-col md:flex-row">
+            <!-- Bagian Heading -->
+            <div class="w-full flex justify-center items-center md:w-1/3 md:justify-center md:items-center md:mb-0">
+                <h1 class="text-3xl font-semibold text-gray-100">Accomplishments</h1>
+            </div>
+    
+            <!-- Bagian Sertifikasi -->
+            <div class="w-full flex flex-col p-2 text-blue-50 md:w-2/3 md:flex md:flex-col md:justify-center">
+                <!-- sertifikasi pertama -->
+                <div class="p-4 my-4 shadow-md bg-gray-800 rounded-lg w-4/5 ml-auto">
+                    <h3 class="font-semibold text-lg mb-1">TensorFlow: Advanced Techniques</h3>
+                    <p class="text-sm text-gray-400">Coursera · May 26, 2024</p>
+                    <p class="mt-2 text-sm">Custom Models, Layers, and Loss Functions with TensorFlow, Custom and Distributed 
+                        Training with TensorFlow, Advanced Computer Vision with TensorFlow, Generative Deep Learning with TensorFlow</p>
+                </div>
+    
+                <!-- sertifikasi kedua -->
+                <div class="p-4 my-4 shadow-md bg-gray-800 rounded-lg w-4/5 ml-auto">
+                    <h3 class="font-semibold text-lg mb-1">TensorFlow: Data and Deployment</h3>
+                    <p class="text-sm text-gray-400">Coursera · May 12, 2024</p>
+                    <p class="mt-2 text-sm">Browser-based Models with TensorFlow.js, Device-based Models with TensorFlow Lite, Data 
+                        Pipelines with TensorFlow Data Services, Advanced Deployment Scenarios with TensorFlow</p>
+                </div>
+    
+                <!-- sertifikasi ketiga -->
+                <div class="p-4 my-4 shadow-md bg-gray-800 rounded-lg w-4/5 ml-auto">
+                    <h3 class="font-semibold text-lg mb-1">Machine Learning</h3>
+                    <p class="text-sm text-gray-400">Coursera · April 17, 2024</p>
+                    <p class="mt-2 text-sm">Supervised Machine Learning: Regression and Classification, Advanced Learning Algorithms, 
+                        Unsupervised Learning, Recommenders, Reinforcement Learning</p>
+                </div>
+    
+                <!-- sertifikasi keempat -->
+                <div class="p-4 my-4 shadow-md bg-gray-800 rounded-lg w-4/5 ml-auto">
+                    <h3 class="font-semibold text-lg mb-1">DeepLearning.AI TensorFlow Developer</h3>
+                    <p class="text-sm text-gray-400">Coursera · April 28, 2024</p>
+                    <p class="mt-2 text-sm">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning, 
+                        Convolutional Neural Networks in TensorFlow, Natural Language Processing in TensorFlow, Sequences, Time Series and Prediction</p>
+                </div>
+    
+                <!-- sertifikasi kelima -->
+                <div class="p-4 my-4 shadow-md bg-gray-800 rounded-lg w-4/5 ml-auto">
+                    <h3 class="font-semibold text-lg mb-1">Mathematics for Machine Learning and Data Science</h3>
+                    <p class="text-sm text-gray-400">Coursera · March 27, 2024</p>
+                    <p class="mt-2 text-sm">Linear Algebra for Machine Learning and Data Science, Calculus for Machine Learning and Data Science, 
+                        Probability & Statistics for Machine Learning & Data Science</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+
+    <section id="projects-section" class="container mx-auto p-6 bg-slate-900">
+        <div class="flex flex-row justify-between">
+            <div class="w-1/3 flex justify-center">
+                <h1 class="text-3xl font-semibold text-gray-100">Projects</h1>
+            </div>
+            <div class="w-2/3 flex flex-col justify-items-end md:grid mx-auto p-2 text-blue-50">
+                <a href="/project-details.html" class="block bg-gray-800 text-white p-6 w-4/5 rounded-md shadow-lg">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="text-sm">Diaz Darsya Rizqullah, Furqan Al Ghifari Zulva, Muhammad Farid</p>
+                            <p class="text-xs text-gray-400">May, 2024 - June, 2024</p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="mb-4">
+                        <img src="your-image-source.jpg" alt="Thesis Image" class="w-full h-40 object-cover rounded-md">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-xl font-semibold mb-2 hover:underline hover:text-blue-500">
+                        Big Data Challenge: Multi-class Text Classification of Tweets Related to Elections
+                    </h3>
+                    <!-- Description -->
+                    <p class="text-sm text-gray-300 mb-4 hover:underline hover:text-blue-500">
+                        Developed a machine learning model for classifying election-related tweets into 8 categories, collaborating 
+                        in a team. Leveraged a fine-tuned IndoBERT model, focusing on data preprocessing, model training, and evaluation. 
+                        The model achieved high accuracy and led the team to the semifinals, placing 39th out of over 400 teams in the 
+                        Satria Data 2024 competition.
+                    </p>
+                    <!-- Tags -->
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-600 text-xs rounded-full">Github Link</span>
+                    </div>
+                </a>                
+
+                <a href="/project-details.html" class="block bg-gray-800 text-white p-6 w-4/5 mt-8 rounded-md shadow-lg">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="text-sm">Muhammad Raditya Hanif, Furqan Al Ghifari Zulva, Yeira Putri Nandika, Elsa Giana Abigail Sitompul, Ibrahim Bintang Rismayadi Putra, Habil Nasution</p>
+                            <p class="text-xs text-gray-400">May, 2024 - June, 2024</p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="mb-4">
+                        <img src="your-image-source.jpg" alt="Thesis Image" class="w-full h-40 object-cover rounded-md">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-xl font-semibold mb-2 hover:underline hover:text-blue-500">
+                        Cultivitea: Tea Leaf Disease Detection Application
+                    </h3>
+                    <!-- Description -->
+                    <p class="text-sm text-gray-300 mb-4 hover:underline hover:text-blue-500">
+                        This capstone project for Bangkit Academy involved developing a machine learning-based mobile app to detect 
+                        diseases in tea leaves. I'm contributing to the effort of building and training the model using Python, TensorFlow, and Keras. 
+                        The model's accuracy was ensured through thorough testing and validation, and the project was successfully presented during 
+                        the Bangkit program showcase.
+                    </p>
+                    <!-- Tags -->
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-600 text-xs rounded-full">Github Link</span>
+                    </div>
+                </a>                
+
+                <a href="/project-details.html" class="block bg-gray-800 text-white p-6 w-4/5 mt-4 rounded-md shadow-lg">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="text-sm">Furqan Al Ghifari Zulva, Ivan Chiari, Rifa Faruqi, Fanul Nastia, Habil Nasution</p>
+                            <p class="text-xs text-gray-400">May, 2024</p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="mb-4">
+                        <img src="your-image-source.jpg" alt="Thesis Image" class="w-full h-40 object-cover rounded-md">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-xl font-semibold mb-2 hover:underline hover:text-blue-500">
+                        Pre-trained Model Application
+                    </h3>
+                    <!-- Description -->
+                    <p class="text-sm text-gray-300 mb-4 hover:underline hover:text-blue-500">
+                        This Machine Learning course project involved a collaborative effort to create a simple web application 
+                        using a pre-trained face swap model from the ailia Model repository on GitHub. The team performed thorough 
+                        testing and validation to ensure the application's functionality and accuracy. The project was successfully 
+                        presented during the final exam, showcasing its practical implementation and teamwork.
+                    </p>
+                    <!-- Tags -->
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-600 text-xs rounded-full">Github Link</span>
+                    </div>
+                </a>                
+
+                <a href="/project-details.html" class="block bg-gray-800 text-white p-6 w-4/5 mt-4 rounded-md shadow-lg">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="text-sm">Furqan Al Ghifari Zulva, Rifa Faruqi, T. Malik Kamal, M. Hafidz Zuliesky</p>
+                            <p class="text-xs text-gray-400">January, 2023 - May 2023</p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="mb-4">
+                        <img src="your-image-source.jpg" alt="Thesis Image" class="w-full h-40 object-cover rounded-md">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-xl font-semibold mb-2 hover:underline hover:text-blue-500">
+                        WasteConnect: Web-Based Waste Management Application
+                    </h3>
+                    <!-- Description -->
+                    <p class="text-sm text-gray-300 mb-4 hover:underline hover:text-blue-500">
+                        WasteConnect is a software engineering project designed to connect individuals and businesses with waste 
+                        collectors and recycling industries. The application aims to streamline waste management processes and 
+                        promote environmental sustainability. Developed using the Laravel framework, it offers a user-friendly 
+                        interface for efficient waste disposal and recycling coordination.
+                    </p>
+                    <!-- Tags -->
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-600 text-xs rounded-full">Github Link</span>
+                    </div>
+                </a>
+                
+
+                <a href="/project-details.html" class="block bg-gray-800 text-white p-6 w-4/5 mt-4 rounded-md shadow-lg">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <p class="text-sm">Furqan Al Ghifari Zulva, Muhammad Danish Rabbani</p>
+                            <p class="text-xs text-gray-400">January, 2023 - May 2023</p>
+                        </div>
+                    </div>
+                    <!-- Image -->
+                    <div class="mb-4">
+                        <img src="your-image-source.jpg" alt="Thesis Image" class="w-full h-40 object-cover rounded-md">
+                    </div>
+                    <!-- Title -->
+                    <h3 class="text-xl font-semibold mb-2 hover:underline hover:text-blue-500">
+                        Artistica: Simple Social Networking Platform
+                    </h3>
+                    <!-- Description -->
+                    <p class="text-sm text-gray-300 mb-4 hover:underline hover:text-blue-500">
+                        A web-based social networking platform, Artistica offers a miniature Instagram-like experience, enabling 
+                        users to connect and share visual content seamlessly. Developed as a project for a web programming 
+                        course, it utilizes the Laravel framework to build a responsive and intuitive interface focused on 
+                        enhancing user interaction and engagement through visual media.
+                    </p>
+                    <!-- Tags -->
+                    <div class="flex space-x-2">
+                        <span class="px-3 py-1 bg-blue-600 text-xs rounded-full">Github Link</span>
+                    </div>
+                </a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact-section" class="container mx-auto p-6 bg-slate-800">
+        <div class="flex flex-row justify-between">
+            <div class="w-1/3 flex justify-center">
+                <h1 class="text-3xl font-semibold text-gray-100">Contact</h1>
+            </div>
+            <div class="w-2/3 mx-auto p-2 flex flex-col md:flex-row">
+                <!-- Form Kontainer -->
+                <div class="w-full md:w-1/2 pr-4">
+                    <form class="w-full flex flex-col space-y-5 p-4">
+                        <!-- <div class="mb-5"> -->
+                        <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required />
+                        <!-- </div> -->
+                        <!-- <div class="mb-5"> -->
+                        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email" required />
+                        <!-- </div> -->
+                        <!-- <div class="mb-5"> -->
+                        <input type="text" id="message" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Message" required>
+                        <!-- </div> -->
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
+                    </form>
+                </div>
+                
+                <!-- Informasi Kontak Kontainer -->
+                <section class="w-full md:w-1/2 mt-8 md:mt-0">
+                    <div class="p-4 flex flex-col space-y-4">
+                        <!-- Email -->
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fas fa-envelope text-2xl"></i>
+                            <a href="mailto:your-email@example.com" class="text-lg" aria-label="email">your-email@example.com</a>
+                        </div>
+                        <!-- Phone Number -->
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fas fa-phone-alt text-2xl"></i>
+                            <a href="tel:+1234567890" class="text-lg" aria-label="phone">+123 456 7890</a>
+                        </div>
+                        <!-- Location -->
+                        <div class="flex items-center space-x-2 text-white">
+                            <i class="fas fa-map-marker-alt text-2xl"></i>
+                            <span class="text-lg" aria-label="location">1234 Dummy Street, City, Country</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 text-gray-300 py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm mb-2">© 2024 Me. All rights reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <!-- LinkedIn Icon -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-blue-400 transition-colors" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45H17V14.9c0-1.35-.04-3.1-1.89-3.1-1.9 0-2.2 1.48-2.2 2.99v6.66H11V10.2h2.09v1.4h.03c.29-.55 1.01-1.14 2.08-1.14 2.21 0 2.63 1.46 2.63 3.34v6.65zM7.27 8.74c-.68 0-1.18-.57-1.18-1.26s.5-1.26 1.18-1.26 1.17.57 1.17 1.26-.5 1.26-1.17 1.26zM8.09 20.45H6.45V10.2H8.09v10.25zM20.45 2.55H3.54C2.25 2.55 1.2 3.6 1.2 4.95v14.1c0 1.35 1.05 2.4 2.35 2.4h16.91c1.35 0 2.4-1.05 2.4-2.4V4.95c0-1.35-1.05-2.4-2.4-2.4z"></path></svg>
+                </a>
+                <!-- GitHub Icon -->
+                <a href="https://github.com/yourprofile" target="_blank" class="hover:text-gray-400 transition-colors" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.86 8.16 6.84 9.5.5.09.68-.22.68-.5v-1.88c-2.68.59-3.24-1.31-3.24-1.31-.54-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.19.08 1.81 1.24 1.81 1.24 1.06 1.8 2.79 1.28 3.47.98.1-.77.41-1.28.74-1.58-2.64-.3-5.42-1.32-5.42-5.89 0-1.3.47-2.37 1.24-3.21-.12-.3-.54-1.51.12-3.14 0 0 1.01-.32 3.3 1.22.95-.27 1.97-.4 2.98-.4s2.03.14 2.98.4c2.28-1.54 3.3-1.22 3.3-1.22.66 1.63.24 2.84.12 3.14.76.84 1.24 1.91 1.24 3.21 0 4.57-2.78 5.59-5.43 5.88.41.35.76 1.03.76 2.09v3.09c0 .28.18.6.68.5C19.14 20.16 22 16.42 22 12c0-5.52-4.48-10-10-10z"></path></svg>
+                </a>
+                <!-- Email Icon -->
+                <a href="mailto:your-email@example.com" class="hover:text-blue-400 transition-colors" aria-label="Email">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.51L3.5 7.5v10.5H20.5V7.5L12 13.51zm0-1.01L20.5 7.5 12 4.49 3.5 7.5 12 12.5zm0 7.5H3.5v-10.5h15V19z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        menuToggle.addEventListener('click', () => {
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    menu.style.transform = 'translateY(0)';
+                }, 10); // Small delay to allow CSS to apply transition
+            } else {
+                menu.style.transform = 'translateY(-100%)';
+                menu.addEventListener('transitionend', () => {
+                    if (menu.style.transform === 'translateY(-100%)') {
+                        menu.classList.add('hidden');
+                    }
+                }, { once: true });
+            }
+        });
+    </script>
+    
+    
+    
+</body>
+</html>
